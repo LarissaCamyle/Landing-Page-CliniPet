@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=McLaren&family=Noto+Sans+Tai+Le&family=Pompiere&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,17 +9,47 @@
 
 body{
     font-size: 100%;
-    background:linear-gradient(to top, rgb(46, 160, 180), rgba(91, 245, 150, 0.747));
+    background:linear-gradient(to top, rgb(30, 132, 150), rgba(91, 245, 150, 0.747));
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .cabecalho {
+    text-decoration: none; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 0.904);
+    font-weight: 400;
+    gap : 5px;
+}
+
+.cabecalho-logo {
+    display: flex;
+    padding-left: 5%;
+}
+
+.cabecalho-escrito {
+    display: flex;
+    padding-right: 5%;
+}
+
+.cabecalho-texto {
+    text-decoration: none; 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    font-family: 'Pompiere', sans-serif;
-    font-size: 35px;
+    font-family: 'McLaren', sans-serif;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.904);
     font-weight: 400;
     gap : 10px;
@@ -131,9 +162,32 @@ body{
     color: rgb(0, 22, 29);  
 }
 
+.conteudo-quartenario {
+    background: rgba(255, 255, 255, 0.37);
+    display: flex;
+    height: 500px;
+    margin-top: 10%;
+    align-content: space-around;
+
+}
+
+.conteudo-quartenario-imagem {
+    height: 500px;
+
+}
+
+.conteudo-quartenario-escrito {
+    font-family: 'McLaren', sans-serif;
+    font-size: 22px;
+    color: rgba(5, 54, 40, 0.911);
+    display: flex;
+    align-items: center;
+    padding: 10%;
+}
+
 .rodape{
     padding: 20px;
-    border-top: 0.6px solid rgba(0, 0, 0, 0.349);
+    border-top: 1px solid rgba(0, 0, 0, 0.281);
     display: flex;
     align-items: center;
     justify-content: center;

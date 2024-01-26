@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Noto+Sans+Tai+Le&family=Pompiere&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background:linear-gradient(to top, rgb(46, 160, 180), rgba(91, 245, 150, 0.747));
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho {
+    text-decoration: none; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 33px;
+    color: rgba(0, 0, 0, 0.904);
+    font-weight: 400;
+    gap : 5px;
+}
+
+.cabecalho-logo {
+    display: flex;
+}
+
+.cabecalho-escrito {
+    display: flex;
+}
+
+.cabecalho-texto {
+    text-decoration: none; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'McLaren', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.904);
+    font-weight: 400;
+    gap : 10px;
+}
+
+.conteudo {
+    border-top: 0.6px solid rgba(0, 0, 0, 0.349);
+    margin-bottom: 50px;
+    height: 80%;
+}
+
+.rodape{
+    padding: 20px;
+    border-top: 0.6px solid rgba(0, 0, 0, 0.349);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
