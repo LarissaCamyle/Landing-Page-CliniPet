@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Noto+Sans+Tai+Le&family=Pompiere&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background:linear-gradient(to top, rgb(46, 160, 180), rgba(91, 245, 150, 0.747));
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.904);
+    font-weight: 400;
+    gap : 10px;
+}
+
+.conteudo{
+    border-top: 0.6px solid rgba(0, 0, 0, 0.349);
+    margin-bottom: 50px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 10%;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 15%;
+}
+
+.conteudo-principal-titulo{
+    font-family: 'Pompiere', sans-serif;
+    font-size: 75px;
+    color: rgba(0, 0, 0, 0.904);
+    font-weight: 900;
+}
+
+.conteudo-principal-subtitulo{
+    font-family: 'McLaren', sans-serif;
+    font-size: 22px;
+    color: rgba(5, 54, 40, 0.911);
+}
+
+.conteudo-principal-botao{
+    background-color: rgb(44, 168, 152);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'McLaren', sans-serif;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(150, 228, 221, 0.164);
+    border-radius: 15px;
+}
+
+.conteudo-principal-botao:hover {
+    background-color: rgb(59, 185, 169);
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'McLaren', sans-serif;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(6, 71, 63, 0.5);
+    border-radius: 15px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 48px;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+}
+
+.conteudo-secundario-titulo{
+    font-family: 'McLaren', sans-serif;
+    color: rgba(0, 44, 31, 0.945);
+    font-size: 20px;
+    border-top: 2px solid rgba(187, 255, 234, 0.596);
+    padding-top: 30px;
+}
+
+.conteudo-secundario-subtitulo{
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 22, 29);  
+    padding-bottom: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.conteudo-terciario {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.conteudo-terciario-titulo{
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 22, 29);  
+}
+
+.rodape{
+    padding: 20px;
+    border-top: 0.6px solid rgba(0, 0, 0, 0.349);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
