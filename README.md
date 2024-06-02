@@ -1,1 +1,1 @@
-https://larissacamyle.github.io/Landing-Page-CliniPet/
+https://larissacamyle.github.io/CliniPet/

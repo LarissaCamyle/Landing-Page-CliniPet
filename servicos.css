@@ -10,6 +10,8 @@
 body{
     font-size: 100%;
     background:linear-gradient(to top, rgb(46, 160, 180), rgba(91, 245, 150, 0.747));
+    width: 100%;
+    height: 100%;
 }
 
 a {
@@ -18,25 +20,36 @@ a {
 }
 
 .cabecalho {
+    background-color: rgba(152, 240, 255, 0.144);
     text-decoration: none; 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px;
     font-family: 'Pompiere', sans-serif;
     font-size: 33px;
     color: rgba(0, 0, 0, 0.904);
     font-weight: 400;
     gap : 5px;
+    height: 55px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.829);
+    margin-bottom: 20px;
 }
 
 .cabecalho-logo {
     display: flex;
+    padding-left: 5%;
+}
+
+.logo-imagem{
+    height: 40px;
+    width: 40px;
 }
 
 .cabecalho-escrito {
     display: flex;
+    padding-right: 5%;
 }
 
 .cabecalho-texto {
@@ -47,20 +60,168 @@ a {
     justify-content: center;
     padding: 15px;
     font-family: 'McLaren', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     color: rgba(0, 0, 0, 0.904);
     font-weight: 400;
     gap : 10px;
 }
+        /*CELULAR********************/
+        @media screen and (max-width: 500px){
+            .cabecalho {
+                font-size: 20px;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                height: 40px;
+            }
+            .cabecalho-logo{
+                padding-left: 0%;
+            }
+            .logo-imagem{
+                height: 25px; width: 25px;
+            }
+            .cabecalho-texto{
+                gap : 0px;
+                font-size: 16px;
+                width: 60px;
+            }
+            .cabecalho-escrito{
+                padding-right: 0px;
+            }
+        }
+
+        /*TABLET********************/
+        @media screen and (min-width: 500px) and (max-width: 750px){
+            .cabecalho {
+                font-size: 30px;
+            }
+            .logo-imagem{
+                height: 35px; width: 35px;
+            }
+            .cabecalho-texto{
+                font-size: 18px;
+            }
+        }
+
+/*CONTEUDO --------------------------------------------------*/
 
 .conteudo {
-    border-top: 0.6px solid rgba(0, 0, 0, 0.349);
     margin-bottom: 50px;
-    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.conteudo-logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-logo-imagem{
+    width: 90px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.conteudo-logo-texto{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Pompiere', sans-serif;
+    color: rgba(0, 39, 51, 0.911);
+}
+
+.conteudo-logo-hr{
+    text-decoration: none;
+    border: 2px solid rgba(0, 54, 63, 0.733);
+    border-radius: 2px;
+    width: 10%;
+    margin-top: 30px;
+}
+
+.conteudo-contato{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin: 50px;
+
+}
+
+.contact-form{
+    width: 60%;
+}
+        /*CELULAR********************/
+        @media screen and (max-width: 500px){
+            .contact-form{
+                width: 100%;
+            }
+        }
+
+        /*TABLET********************/
+        @media screen and (min-width: 500px) and (max-width: 1100px){
+            .contact-form{
+                width: 80%;
+            }
+        }
+
+.conteudo-contato-email, .conteudo-contato-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+
+input{
+    background:rgb(236, 255, 218);
+    height: 35px;
+    border: 2px solid rgb(1, 81, 92);
+    width: 100%;
+    padding: 10px;
+    font-family: 'McLaren', sans-serif;
+    font-size: 15px;
+}
+
+input[type=text]{
+    height: 100px;
+}
+
+
+.conteudo-contato-texto {
+    font-family: 'McLaren', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
+
+button{
+    background: rgb(6, 94, 80);
+    box-shadow: 2px 4px 3px rgba(184, 230, 233, 0.253);
+    color: rgb(229, 253, 253);
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'McLaren', sans-serif;
+    font-size: 18px;
+    width: 80px;
+    padding: 4px;
+    margin: 2%;
+}
+
+button:hover {
+    background: rgb(34, 133, 118);
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.171);
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 85px;
+
+}
+
+
+
+
+/*RODAPE -------------------------------------------------------------*/
+
 .rodape{
-    padding: 20px;
+    padding: 10px;
     border-top: 0.6px solid rgba(0, 0, 0, 0.349);
     display: flex;
     align-items: end;
